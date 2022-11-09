@@ -1,0 +1,769 @@
+1) package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner teclado=new Scanner(System.in);
+int numeroA, numeroB, numeroAux;
+int dif,resultado;
+do{
+System.out.println("Di el primer numero: ");
+numeroA = teclado.nextInt();
+System.out.println("Di el segundo numero: " );
+numeroB = teclado.nextInt();
+}while(numeroA == numeroB);
+if (numeroA>numeroB) {
+	numeroAux = numeroB;
+    numeroB = numeroA;
+    numeroA = numeroAux;
+
+	}
+dif= numeroB - numeroA -1;
+resultado=(numeroA+1 + numeroB-1)*dif/2;
+System.out.println("La suma de los numeros comprendidos entre " + numeroA + " y " + numeroB + " es igual a " + resultado);
+	}
+	
+}
+
+2) package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		
+		 Scanner sc = new Scanner(System.in);
+
+		    int numero = 0;
+		    boolean condicion = false;
+		    while (!condicion) {
+		        System.out.println("Introduzca un numero entero: ");
+		        numero = sc.nextInt();
+		        condicion = (numero <= 10 && numero >= 1);
+		    if (condicion) {
+		            System.out.println("La tabla del " + numero + " es la siguiente");
+		    for (int i = 1; i <= 10; i++) {
+		                System.out.println(numero + " * " + i + " = " + numero * i);
+		            }
+		        }
+		    }
+	}
+	}
+
+
+3) package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner teclado=new Scanner(System.in);
+System.out.println("Dime el numero que quieras: ");
+int n;
+n = teclado.nextInt();
+
+for (int i = 1 ; i <= n ; i++)
+    if (n % i == 0)
+        System.out.println (i);
+}
+}
+
+4) import java.util.Scanner;
+
+public class main{
+
+	public static void main(String[] args) {
+		
+Scanner teclado=new Scanner(System.in);
+System.out.println("Dime el numero que quieras y te dire si es primo: ");
+int n,contador;
+n = teclado.nextInt();
+contador=0;
+for (int i = 1 ; i <= n ; i++)
+    if (n % i == 0){
+        System.out.println (i);
+        contador++;}
+{
+
+}
+
+	if (contador <= 2){
+	System.out.println("El numero es primo");
+	}
+	else { System.out.println("El numero no es primo");
+}
+}
+}
+
+
+5) package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		
+Scanner teclado=new Scanner(System.in);
+int numero,contador = 0,resultado = 0;
+do {
+	
+	System.out.print("Dime un numero ");
+	 numero=teclado.nextInt();
+	 if  (numero!=0) 
+		 contador++;
+	 resultado+=numero;
+}while   (numero!=0);
+System.out.println("La cantidad de numeros que me has dado es de " + contador);
+System.out.println("La suma de todos ellos es " + resultado);
+}
+	}
+
+6) package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		
+Scanner teclado=new Scanner(System.in);
+int sumaPares = 0,sumaImpares = 0,numero=0,contador = 0;
+do {
+	
+	System.out.print("Dime un numero ");
+	 numero=teclado.nextInt();
+	 if (numero!=0) 
+		 contador++;
+	 if  (contador %2 == 0) sumaPares = sumaPares + numero;
+	 else sumaImpares = sumaImpares + numero;
+}while (numero!=0)  ;
+
+System.out.println("La suma de los pares es " + sumaPares);
+System.out.println("La suma de los impares es " + sumaImpares);
+}
+	}
+
+7) package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		
+Scanner teclado=new Scanner(System.in);
+int numero=0,contador = 0,resultado = 0,numeroMayor=0,numeroMenor=0;
+double media;
+do {
+	
+	System.out.print("Dime un numero ");
+	 numero=teclado.nextInt();
+	 resultado+=numero;
+	if (numero!=0) {
+	contador++;
+	if (contador==1) {
+		numeroMayor=numero;
+		numeroMenor=numero;}
+	else {
+		if (numeroMayor<numero) {
+			numeroMayor=numero;
+		}
+		if (numeroMenor>numero){
+		    numeroMenor=numero;
+		}
+	}
+	}
+}while (numero!=0);
+media=resultado/(double)contador;
+System.out.println("La media es " + media);
+System.out.println("El numero menor es " + numeroMenor);
+System.out.println("El numero mayor es " + numeroMayor);
+}
+	}
+
+8) package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		
+Scanner teclado=new Scanner(System.in);
+int numero = 0,factorial = 1;
+
+do {
+	System.out.println("Dime un numero ");
+	numero=teclado.nextInt();
+}
+while(numero == 0);
+
+for (int i = 0; i < numero; i++){
+	factorial = factorial * (numero-i);
+	
+       
+        }
+System.out.println("El factorial del numero " + numero + " es " + factorial); 
+}
+}
+
+9)package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		
+Scanner teclado=new Scanner(System.in);
+int n = 0, suma=0, i;
+System.out.println("Dime un numero ");
+n=teclado.nextInt();
+for (i = 1; i < n; i++) {                             
+    if (n % i == 0) {
+        suma = suma + i; 
+    }
+}
+if (suma == n) {                      
+    System.out.println("Perfecto");
+} else {
+    System.out.println("No es perfecto");
+
+}
+}
+}
+
+10) package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		
+Scanner teclado=new Scanner(System.in);
+int n,contador=1,numeroExceso = 0;
+boolean primo=false;
+System.out.println("Dime un numero");
+n=teclado.nextInt();
+while (primo==false){
+	numeroExceso=n+contador;
+	primo=true;
+for (int i = 2 ; i < numeroExceso ; i++) {
+	
+    if (numeroExceso % i == 0){
+        primo = false;}
+        
+}
+contador++;
+}
+System.out.println("El siguiente numero primo en exceso es: " + numeroExceso);
+}
+}
+
+11) package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		
+Scanner teclado=new Scanner(System.in);
+int n,contador=1, numeroP;
+boolean primo;
+
+System.out.println("Dime un numero");
+n=teclado.nextInt();
+for (int j=3 ; j< n ; j++){
+     numeroP=j;
+     primo=true;
+	
+for (int i = 2 ; i < numeroP ; i++) {
+	
+    if (numeroP % i == 0){
+    	primo=false; }
+        
+}
+if (primo==true)
+System.out.print(j +", ");
+}
+
+}
+}
+	
+12) package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA{
+   
+	
+
+	public static void main(String[] args) 
+    {
+    Scanner teclado=new Scanner(System.in);
+    int entrada;
+    double base = 0,altura,lado,area = 0;
+    System.out.print("Ingrese un numero ");
+    entrada = teclado.nextInt();
+    
+        switch(entrada)
+        {
+                case 1: 
+                System.out.println("Cuadrado");
+                
+                System.out.println("Dame su base ");
+                base=teclado.nextInt();
+                area=base*base;
+                System.out.println("Area: " + area);
+                
+                System.out.println ("* * * * * * *");
+                System.out.println ("*           *");
+                System.out.println ("*           *");
+                System.out.println ("*           *");
+                System.out.println ("*           *");
+                System.out.println ("*           *");
+                System.out.println ("* * * * * * *");
+                break;
+                case 2:
+                System.out.println("Rectangulo");
+                System.out.println("Dame su base ");
+                base=teclado.nextInt();
+                System.out.println("Dame su lado ");
+                lado=teclado.nextInt();
+                area=base*lado;
+                System.out.println("Area: " + area);
+                System.out.println ("* * * * * * *");
+                System.out.println ("*           *");
+                System.out.println ("*           *");
+                System.out.println ("*           *");
+                System.out.println ("* * * * * * *");
+                break;
+                case 3: 
+                System.out.println("Triangulo");
+                System.out.println("Dame su base ");
+                base=teclado.nextInt();
+                System.out.println("Dame su altura ");
+                altura=teclado.nextInt();
+                area=base*altura/2;
+                System.out.println("Area: " + area);
+                System.out.println ("      *       ");
+                System.out.println ("     * *      ");
+                System.out.println ("    *   *     ");
+                System.out.println ("   *     *    ");
+                System.out.println ("  *       *   ");
+                System.out.println (" *         *  ");
+                System.out.println ("* * * * * * * ");
+                break;
+                default:
+                System.out.print ("No es valido el numero");
+                
+        }
+        }
+}
+package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner; 
+
+
+public class ClaseA{
+   
+	
+
+	public static void main(String[] args) 
+    {
+    Scanner teclado=new Scanner(System.in);
+    int entrada,suma=0,resta,multiplicacion,numero,n1,n2,operacion,contador = 0;
+    
+   
+    System.out.print("Ingrese un numero ");
+    entrada = teclado.nextInt();
+    switch(entrada)
+    {
+    case 1:
+    	for(int i=0; i<10; i++) {
+    		
+    	System.out.println("Sumas");
+    	n1 = (int)(Math.random()*20+1);
+    	n2 = (int)(Math.random()*20+1);
+    	
+    	operacion=n1 + n2;
+    	System.out.println(n1  +" + " + n2 + " = ");
+    	suma = teclado.nextInt();
+    	if (suma== operacion)
+    		contador++;
+    	
+    	}
+    	System.out.println ("La nota del alumno es " + contador);
+    	break;
+    case 2:
+    	System.out.println("Restas");
+    	for(int i=0; i<10; i++) {
+    		
+    		n1 = (int)(Math.random()*20+1);
+        	n2 = (int)(Math.random()*20+1);
+        	
+        	operacion=n1 - n2;
+        	System.out.println(n1  +" - " + n2 + " = ");
+        	resta = teclado.nextInt();
+        	if (resta== operacion)
+        		contador++;
+        	
+        	}
+        	System.out.println ("La nota del alumno es " + contador);
+    	break;
+    case 3:
+    	System.out.println("Multiplicaciones");
+    		for(int i=0; i<10; i++) {
+    		
+    		n1 = (int)(Math.random()*20+1);
+        	n2 = (int)(Math.random()*20+1);
+        	
+        	operacion=n1 * n2;
+        	System.out.println(n1  +" * " + n2 + " = ");
+        	multiplicacion = teclado.nextInt();
+        	if (multiplicacion== operacion)
+        		contador++;
+        	
+        	}
+        	System.out.println ("La nota del alumno es " + contador);
+    	break;
+    }
+    }
+	}
+
+package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		
+Scanner teclado=new Scanner(System.in);
+
+
+char letra;
+String cadena, cadena2="";
+System.out.println("Escribe lo que quieras sin pasarte de 80 caracteres: ");
+cadena=teclado.nextLine();
+if (cadena.length()<=80) {
+for (int t=0;t<cadena.length();t++) {
+	cadena2=cadena.substring(0, t +1);
+System.out.println(cadena2);
+}
+}
+}
+}
+
+package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		
+Scanner teclado=new Scanner(System.in);
+	
+	char letra;
+	int posicion,mayus = 0,minus = 0;
+	String cadena, cadena2="";
+	System.out.println("Escribe lo que quieras sin pasarte de 80 caracteres: ");
+	cadena=teclado.nextLine();
+	if (cadena.length()<=80) {
+	for(int t=0;t<cadena.length();t++) {
+		letra=cadena.charAt(t);
+		posicion=letra;
+	if (posicion>=65 && posicion<=90){
+		mayus++;
+	}
+	else if(posicion>=97 && posicion<=122){
+		minus++;
+	}
+	
+		
+}
+	System.out.print("Las mayusculas son" + mayus +"Las minusculas son "+ minus);
+}
+}
+}
+/*Programa que lea una frase y una palabra y que nos 
+diga la posición de dicha palabra en la frase
+y si no la encuentra devuelva un cero*/
+package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		
+Scanner teclado=new Scanner(System.in);
+	
+	String cadena,palabra;
+	
+	int result;
+	char posicion;
+	System.out.println("Dime el texto: ");
+	cadena=teclado.nextLine();
+	System.out.println("Dime la palabra que quieres que busque: ");
+	palabra = teclado.nextLine();
+	
+	
+	result= cadena.indexOf(palabra);
+	
+	if (result>=0) {System.out.println("La palabra esta en la posicion: " + result);
+	}
+	else {System.out.println("0");}
+}
+}
+
+
+/*Leer una cadena de hasta 80 caracteres y pasarla en función de una variable de opción a
+mayúsculas ó a minúsculas e imprimir la cadena resultante.*/
+
+package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		
+Scanner teclado=new Scanner(System.in);
+	String cadena;
+	int entrada = 0;
+	System.out.println("Dime lo que quieres que transforme en mayusculas o minusculas: ");
+	cadena = teclado.nextLine();
+	System.out.println("Dime 1 si quieres mayusculas o 2 si quieres minusculas: ");
+	entrada=teclado.nextInt();
+	
+switch(entrada){
+case 1:
+	
+	cadena= cadena.toUpperCase();
+	System.out.println(cadena);
+	break;
+case 2:
+	
+	cadena= cadena.toLowerCase();
+	System.out.println(cadena);
+	break;
+}
+}
+
+/*Leer una frase por teclado (máximo 80 car) y construir otras dos cadenas de forma que una
+contenga los caracteres en posición par y la otra los caracteres en posición impar.*/
+
+package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		
+Scanner teclado=new Scanner(System.in);
+int n = 0;
+String cadena,texto,cadenaimpar = "",cadenapar = "";
+System.out.println("Escribe lo que quieras sin pasarte de 80 caracteres: ");
+cadena=teclado.nextLine();
+if (cadena.length()<=80);
+
+for (int i = 0; i < cadena.length(); i++) {
+	 if((i+1)%2 == 0){
+	 cadenapar+=cadena.charAt(i);
+	 }
+	 else {
+		  cadenaimpar+=cadena.charAt(i);
+	 }
+	
+	 
+}
+System.out.println(cadenapar);
+System.out.println(cadenaimpar);
+}
+}
+
+package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		
+Scanner teclado=new Scanner(System.in);
+	
+	char letra;
+	int posicion,mayus = 0,minus = 0,num = 0;
+	String cadena, cadena2="";
+	System.out.println("Escribe lo que quieras sin pasarte de 80 caracteres: ");
+	cadena=teclado.nextLine();
+	if (cadena.length()<=80) {
+	for(int t=0;t<cadena.length();t++) {
+		letra=cadena.charAt(t);
+		posicion=letra;
+	if (posicion>=65 && posicion<=90){
+		mayus++;
+	}
+	else if(posicion>=97 && posicion<=122){
+		minus++;}
+	else if(posicion>=48 && posicion<=57) {
+		num++;
+		}
+	}
+	
+		
+}
+	System.out.print("La cantidad de mayusculas son " + mayus +" La cantidad de minusculas son "+ minus +" La cantidad de numeros es " + num);
+}
+}
+
+
+/*Leer una frase por teclado (máximo 80) y a continuación escribir cuantas vocales, consonantes y
+caracteres numéricos posee.*/
+package ACTIVIDADESPROGRAMACION;
+import java.util.Scanner;
+public class ClaseA {
+public static void main(String[] args) {
+Scanner teclado=new Scanner(System.in);
+char letra;
+int posicion,vocal = 0,consonante= 0,num = 0;
+String cadena;
+	System.out.println("Escribe lo que quieras sin pasarte de 80 caracteres: ");
+	cadena = teclado.nextLine();
+	for(int t=0;t<cadena.length();t++) 
+	if (cadena.length()<=80) {
+		letra=cadena.charAt(t);
+		posicion=letra;
+	if(posicion>=48 && posicion<=57){
+			num++;}
+	if (Character.isLetter(letra)){
+	if (posicion==65 || posicion==69 || posicion==73 || posicion==79 || posicion==85 || 
+			posicion==97 || posicion==101 || posicion==105 || posicion==111 || posicion==117){
+		vocal++;}
+	else 
+	{consonante++;}
+	}
+	}
+	
+	System.out.print("La cantidad de vocales es " + vocal  +" La cantidad de numeros es " + num + " La cantidad de consonantes es " + consonante);	
+	}
+}
+
+package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		
+Scanner teclado=new Scanner(System.in);
+	
+	
+
+	String frase;
+	boolean mayusculas = true;
+	do {
+		System.out.println("Dime lo que quieres que transforme en mayusculas y encripte");
+		frase = teclado.nextLine();
+	while (!frase)
+		for (int i=0;i<frase.length();i++) {
+		
+		if(! Character.isUpperCase(frase.charAt(i)))
+			mayusculas = false;}
+	} while (mayusculas==false);
+	String codificado = "";
+for (int i=0;i<frase.length();i++) {
+		codificado +=frase.charAt(i) + 3;
+		System.out.println("Resultado: " + codificado);
+}
+}
+}
+
+/*Leer una frase filtrándola a que todos sus caracteres sean mayúsculas, una vez filtrada, hacer un
+cifrado por sustitución (denominado cifrado CESAR) de la frase de modo que cada carácter se
+transforme en 3 códigos ASCII más; es decir:
+Frase inicial PROGRAMACION resultado SURJUDPDFLRQ.*/
+
+package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		
+Scanner teclado=new Scanner(System.in);
+	
+	
+
+	String frase;
+	boolean mayusculas = true;
+	do {
+		System.out.println("Dime lo que quieres que transforme en mayusculas y encripte");
+		frase = teclado.nextLine();
+	} while (! frase.equals(frase.toUpperCase()));
+	String codificado="";
+	for (int i=0;i<frase.length();i++) {
+		codificado +=(char)(frase.charAt(i) + 3);
+}
+	System.out.println("Resultado: " + codificado);
+}
+}
+
+/*Modificar el/los programa/s anterior/es para que, leido un número del 1 al 10. Realice la
+sustitución usando dicho número.*/
+package ACTIVIDADESPROGRAMACION;
+
+import java.util.Scanner;
+
+public class ClaseA {
+
+	public static void main(String[] args) {
+		
+Scanner teclado=new Scanner(System.in);
+	
+	
+
+	String frase;
+	boolean mayusculas = true;
+	int n;
+	do {
+		System.out.println("Dime lo que quieres que transforme en mayusculas y encripte");
+		frase = teclado.nextLine();
+	} while (! frase.equals(frase.toUpperCase()));
+	String codificado="";
+	System.out.println("Dame el valor que quieras del 1-10 ");
+	n=teclado.nextInt();
+	for (int i=0;i<frase.length();i++) {
+		
+		codificado +=(char)(frase.charAt(i) +n);
+		
+}
+	System.out.println("Resultado: " + codificado);
+}
+}
+
+String texto = "",cadena2;
+	
+	do{
+		System.out.println("Dime un codigo ");
+		texto=teclado.nextLine();
+		
+		Character.isDigit(0);Character.isDigit(1);Character.isDigit(2);
+	}while{
+	}
+	}
+    }

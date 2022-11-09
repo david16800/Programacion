@@ -1,0 +1,343 @@
+import java.util.Scanner;
+/*obtener temperatura e imprimir que deporte es apropiado para la misma*/
+public class Main{
+    public static void main(String[] args)  {
+      
+        Scanner teclado=new Scanner(System.in);
+        int temp;
+        System.out.print("Introduzca temperatura en grados celsius:"); 
+        temp=teclado.nextInt();
+        
+        if(temp >29){
+        System.out.print("Hay que hacer natacion");}
+        else if (temp <= 29&& temp > 21){
+        System.out.print("Hay que hacer Tenis");}
+        else if (temp <= 21&& temp >0){
+        System.out.print("Hay que hacer golf");}
+        else if (temp <= 0&& temp >-12){
+        System.out.print("Hay que hacer esqui");}
+        else if (temp <=-12){
+        System.out.print("Hay que hacer damas");}
+        }
+}
+
+import java.util.Scanner;
+/*Pedir ID, horas lectivas y horas faltadas de un alumno para calcular el porcentaje de faltas y si supera un porcentaje mandar avisos*/
+public class Main{
+    public static void main(String[] args) 
+    {
+    Scanner teclado=new Scanner(System.in);
+    double horas_modulo, porcentaje;
+    float ID, horas_faltadas;
+      
+        System.out.print("Introduzca ID alumno: ");
+        ID=teclado.nextFloat();
+        System.out.println("Introduzca horas del modulo ");
+        horas_modulo=teclado.nextDouble();
+        System.out.print("Horas faltadas por el alumno ");
+        horas_faltadas=teclado.nextFloat();
+        System.out.println("Introduzca horas faltadas del alumno con ID " + (int)ID + " es: " +(int)horas_faltadas +"");
+    
+        porcentaje=horas_faltadas/horas_modulo;
+        porcentaje=100*porcentaje;
+        System.out.println("Este numero de faltas supone el procentaje del: " + porcentaje + "%");
+        if(porcentaje>15){
+            System.out.println("Esto supone la perdida de evalucaion continua");
+        }
+        else if(porcentaje>10){
+            System.out.println("El alumno debe tener cuidado pues esta cerca de perder la evaluacion continua");
+        }
+        else if(porcentaje>5){
+            System.out.println("El alumno ha debe cuidar sus faltas, lleva ya un 5%");
+        }
+        else if(porcentaje>=0){
+            System.out.println("El alumno no ha faltado ningun dia");
+        }
+    }    
+    }
+
+import java.util.Scanner;
+/*Programa para saber que numero es cada mes del año*/
+public class Main{
+    public static void main(String[] args) 
+    {
+    Scanner teclado=new Scanner(System.in);
+    int entrada;
+    System.out.print("Ingrese un numero ");
+    entrada=teclado.nextInt();
+    
+        switch(entrada)
+        {
+                case 1: 
+                System.out.print ("El mes numero " + entrada + " es Enero");
+                break;
+                case 2: 
+                System.out.print ("El mes numero " + entrada + " es Febrero");
+                break;
+                case 3: 
+                System.out.print ("El mes numero " + entrada + " es Marzo");
+                break;
+                case 4: 
+                System.out.print ("El mes numero " + entrada + " es Abril");
+                break;
+                case 5: 
+                System.out.print ("El mes numero " + entrada + " es Mayo");
+                break;
+                case 6: 
+                System.out.print ("El mes numero " + entrada + " es Junio");
+                break;
+                case 7: 
+                System.out.print ("El mes numero " + entrada + " es Julio");
+                break;
+                case 8: 
+                System.out.print ("El mes numero " + entrada + " es Agosto");
+                break;
+                case 9: 
+                System.out.print ("El mes numero " + entrada + " es Septiembre");
+                break;
+                case 10: 
+                System.out.print ("El mes numero " + entrada + " es Octubre");
+                break;
+                case 11: 
+                System.out.print ("El mes numero " + entrada + " es Noviembre");
+                break;
+                case 12: 
+                System.out.print ("El mes numero " + entrada + " es Diciembre");
+                break;
+                default:
+                System.out.print ("No es valido el numero");
+                
+        }
+        }
+}
+import java.util.Scanner;
+/**/
+public class Main{
+    public static void main(String[] args) 
+    {
+    Scanner teclado=new Scanner(System.in);
+    char letra;
+    int numero;
+    String cad;
+    System.out.print("Ingrese una letra: ");
+    //letra=(teclado.nextLine())[0];
+    
+    
+    
+    while (true){
+        cad = teclado.nextLine().toUpperCase();
+        letra = cad.charAt(0);
+        
+        switch(letra)
+        {
+            
+                case 'A': 
+                System.out.println ("1");
+                break;
+                case 'B': 
+                System.out.println ("1");
+                break;
+                case 'C': 
+                System.out.println ("1");
+                break;
+                case 'D': 
+                System.out.println ("2");
+                break; 
+                case 'E': 
+                System.out.println ("2");
+                break;
+                case 'F': 
+                System.out.println ("2");
+                break;
+                case 'G': 
+                System.out.println ("3");
+                break;
+                case 'H': 
+                System.out.println ("3");
+                break;
+                case 'I': 
+                System.out.println ("3");
+                break;
+                case 'J': 
+                System.out.println ("4");
+                break;
+                case 'K': 
+                System.out.println ("4");
+                break;
+                case 'L': 
+                System.out.println ("4");
+                case 'M': 
+                System.out.println ("5");
+                break;
+                case 'N': 
+                System.out.println ("5");
+                break;
+                case 'O': 
+                System.out.println ("5");
+                break;
+                case 'P': 
+                System.out.println ("5");
+                break;
+                case 'Q': 
+                System.out.println ("6");
+                break;
+                case 'R': 
+                System.out.println ("6");
+                break;
+                case 'S': 
+                System.out.println ("6");
+                break;
+                case 'T': 
+                System.out.println ("7");
+                break;
+                case 'U': 
+                System.out.println ("7");
+                break;
+                case 'V': 
+                System.out.println ("7");
+                break;
+                case 'W': 
+                System.out.println ("8");
+                break;
+                case 'X': 
+                System.out.println ("8");
+                break;
+                case 'Y': 
+                System.out.println ("8");
+                break;
+                case 'Z': 
+                System.out.println ("9");
+                break;
+                default: 
+                System.out.println("No es valido");
+                
+        }  
+        System.out.print("Ingrese otra letra: ");
+        }
+        }
+}
+
+Contador de errores y finalizar con un 0: 
+
+import java.util.Scanner;
+/**/
+public class Main{
+    public static void main(String[] args) 
+    {
+    Scanner teclado=new Scanner(System.in);
+    char letra;
+    int numero;
+    int i=0;
+    String cad;
+    System.out.print("Ingrese una letra: ");
+    //letra=(teclado.nextLine())[0];
+    
+    
+    boolean terminar = false;
+    while (!terminar){
+        cad = teclado.nextLine().toUpperCase();
+        letra = cad.charAt(0);
+        if (letra =='0'){
+        terminar = true;
+        
+            
+        }
+        else {
+        
+        switch(letra)
+        {
+            
+                case 'A': 
+                System.out.println ("1");
+                break;
+                case 'B': 
+                System.out.println ("1");
+                break;
+                case 'C': 
+                System.out.println ("1");
+                break;
+                case 'D': 
+                System.out.println ("2");
+                break; 
+                case 'E': 
+                System.out.println ("2");
+                break;
+                case 'F': 
+                System.out.println ("2");
+                break;
+                case 'G': 
+                System.out.println ("3");
+                break;
+                case 'H': 
+                System.out.println ("3");
+                break;
+                case 'I': 
+                System.out.println ("3");
+                break;
+                case 'J': 
+                System.out.println ("4");
+                break;
+                case 'K': 
+                System.out.println ("4");
+                break;
+                case 'L': 
+                System.out.println ("4");
+                case 'M': 
+                System.out.println ("5");
+                break;
+                case 'N': 
+                System.out.println ("5");
+                break;
+                case 'O': 
+                System.out.println ("5");
+                break;
+                case 'P': 
+                System.out.println ("5");
+                break;
+                case 'Q': 
+                System.out.println ("6");
+                break;
+                case 'R': 
+                System.out.println ("6");
+                break;
+                case 'S': 
+                System.out.println ("6");
+                break;
+                case 'T': 
+                System.out.println ("7");
+                break;
+                case 'U': 
+                System.out.println ("7");
+                break;
+                case 'V': 
+                System.out.println ("7");
+                break;
+                case 'W': 
+                System.out.println ("8");
+                break;
+                case 'X': 
+                System.out.println ("8");
+                break;
+                case 'Y': 
+                System.out.println ("8");
+                break;
+                case 'Z': 
+                System.out.println ("9");
+                break;
+                default: 
+                System.out.println("No es valido");
+                i++;
+        }  
+        }
+        if (terminar== false)
+        System.out.println("Ingrese otro numero:");
+        else {System.out.println("El programa ha finalizado");
+        System.out.println("El numero de errores es: " + i);
+        }
+        }
+        }
+}
+
+Bucle determinadas veces for (contador=1; contador<=10;contador++){
+//cuerpo
+}
